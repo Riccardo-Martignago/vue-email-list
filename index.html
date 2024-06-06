@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <div id="app">
-        <h1>{{ message }}</h1>
+        <ul>
+            <li v-for="(item, index) in list" :key="index">
+                {{item}}
+            </li>
+        </ul>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="./JS/script.js"></script>
 </body>
 </html>
